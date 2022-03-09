@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.invisibleBackground {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  background-image: url(https://n1s2.hsmedia.ru/a1/85/67/a18567f17d77619886c5694891fe5dbe/3212x2160_1_8242fd8e4499a0d89fb3cb99d0b94523@5000x3362_0xac120003_15322153131629104609.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.transparent-container {
+  height: 50vh;
+  width: 100%;
+  background: transparent !important;
+}
+
+/*
+ * Greeting part
+ * - Logo
+ * - Navigation
+ * - Contact button
+ */
+
+.greeting-container {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  z-index: 10;
+  background-image: url(https://wallpaperaccess.com/full/759757.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+header {
+  position: fixed;
+  background-color: rgba(140, 140, 140, 0.02);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-sides {
+  width: 25%;
+  height: 100px;
+}
+
+.navbar {
+  width: 50%;
+  height: 100px;
+  color: white;
+}
+
+.navbar > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 1.65vh;
+  list-style: none;
+}
+
+.navbar > ul > li > a {
+  transition: text-shadow 0.1s ease-out;
+}
+
+.navbar > ul > li > a:hover {
+  text-decoration: underline;
+  text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+.navbar > ul > li > a:after {
+  color: white;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.greeting span {
+  display: block;
+  font-style: italic;
+}
+
+.greeting h1 {
+  display: block;
+  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  margin: 10px 0px 40px 0px;
+}
+
+.button {
+  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  height: auto;
+  margin: 0 auto;
+  background-color: transparent;
+  color: white;
+  outline: 1px solid white;
+  transition: box-shadow 0.1s ease-out;
+}
+
+.button:hover {
+  background-color: white;
+  color: #050505;
+  box-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+/*
+ * Booking part
+ * 
+ * 
+ */
+
+.booking-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+}
+
+.booking-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+}
+
+.booking-button {
+  padding-right: 100px;
+  letter-spacing: 1px;
+  text-align: start;
+}
+
+.booking-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 70%;
+}
+
+.description-block, .description-block > .description-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  color: white;
+}
+
+.description-text > span {
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.description-text > .timestamp {
+  font-size: large;
+  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.description-text > h1 {
+  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.booking-sides {
+  width: 25%;
+  height: 100%;
+}
+
+/*
+ * Advantage part
+ * 
+ * 
+ */
+
+.advantage-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 70vh;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
+
+.advantage-sides {
+  width: 25%;
+  height: 100%;
+}
+
+.advantage-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.advantage-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35%;
+  letter-spacing: 1px;
+}
+
+.advantage-header > h1 {
+  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+.advantage-header > .header-span {
+  width: 50%;
+  text-align: center;
+  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
+}
+
+.advantage-description {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 65%;
+}
+
+.advantage-list {
+  width: 50%;
+}
+
+.advantage-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+/*
+.wrapper-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.leftSide {
+  grid-area: 1 / 1 / 6 / 2;
+}
+.rightSide {
+  grid-area: 1 / 5 / 6 / 6;
+}
+.content-container {
+  grid-area: 1 / 2 / 6 / 5;
+}
+*/

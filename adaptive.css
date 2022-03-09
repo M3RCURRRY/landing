@@ -1,0 +1,40 @@
+@media (max-width: 1100px) {
+  .nav-sides, .booking-sides {
+    display: none;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 75px;
+  }
+
+  .booking-content {
+    width: 100%;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  .description-block {
+    width: 50%;
+  }
+
+  .description-image {
+    width: 0%;
+  }
+  
+  .advantage-header > .header-span {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1350px) {
+  .nav-sides, .booking-sides {
+    width: 15%;
+  }
+
+  .navbar, .booking-content {
+    width: 70%;
+  }
+}

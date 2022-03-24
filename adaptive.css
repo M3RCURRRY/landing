@@ -30,11 +30,11 @@
 }
 
 @media (min-width: 1101px) and (max-width: 1350px) {
-  .nav-sides, .booking-sides {
+  .nav-sides, .booking-sides, .advantage-sides {
     width: 15%;
   }
 
-  .navbar, .booking-content {
+  .navbar, .booking-content, .advantage-content {
     width: 70%;
   }
 }

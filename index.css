@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 
+* {
+  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
+}
+
 .wrapper {
   height: 100vh;
   width: 100%;
@@ -63,7 +67,7 @@ header {
   align-items: center;
   justify-content: space-around;
 
-  font-size: 1.65vh;
+  font-size: 1.5rem;
   list-style: none;
 }
 
@@ -72,6 +76,7 @@ header {
 }
 
 .navbar > ul > li > a:hover {
+  cursor: pointer;
   text-decoration: underline;
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
 }
@@ -98,13 +103,11 @@ header {
 
 .greeting h1 {
   display: block;
-  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
   font-size: 2.5em;
   margin: 10px 0px 40px 0px;
 }
 
 .button {
-  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
   display: inline-block;
   padding: 10px 20px 10px 20px;
   height: auto;
@@ -116,9 +119,9 @@ header {
 }
 
 .button:hover {
-  background-color: white;
-  color: #050505;
-  box-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  box-shadow: 1px 1px 10px #fff, 1px 1px 5px rgba(255, 255, 255, 0.9);
 }
 
 /*
@@ -148,6 +151,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 30%;
 }
@@ -180,15 +184,13 @@ header {
   letter-spacing: 1px;
 }
 
-.description-text > .timestamp {
+.timestamp {
   font-size: large;
-  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
   font-style: normal;
   letter-spacing: 1px;
 }
 
-.description-text > h1 {
-  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
+.description-text > h1, .advantage-list > h1 {
   margin-bottom: 10px;
 }
 
@@ -236,14 +238,12 @@ header {
 }
 
 .advantage-header > h1 {
-  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
   margin-bottom: 15px;
 }
 
 .advantage-header > .header-span {
   width: 50%;
   text-align: center;
-  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
 }
 
 .advantage-description {
@@ -254,6 +254,9 @@ header {
 }
 
 .advantage-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
 }
 
@@ -264,22 +267,19 @@ header {
   width: 50%;
 }
 
-/*
-.wrapper-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #18191A;
 }
 
-.leftSide {
-  grid-area: 1 / 1 / 6 / 2;
+.footer-sides {
+  width: 25%;
+  height: 100%;
 }
-.rightSide {
-  grid-area: 1 / 5 / 6 / 6;
+
+.footer-container {
+  width: 50%;
+  height: 100%;
 }
-.content-container {
-  grid-area: 1 / 2 / 6 / 5;
-}
-*/
+

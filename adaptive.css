@@ -1,5 +1,5 @@
 @media (max-width: 1100px) {
-  .nav-sides, .booking-sides {
+  .nav-sides, .advantage-sides, .booking-sides {
     display: none;
   }
 
@@ -8,7 +8,7 @@
     height: 75px;
   }
 
-  .booking-content {
+  .booking-content, .advantage-content {
     width: 100%;
   }
 

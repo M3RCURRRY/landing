@@ -268,8 +268,10 @@ header {
 }
 
 footer {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 15vh;
+  height: auto;
   background-color: #18191A;
 }
 
@@ -279,6 +281,22 @@ footer {
 }
 
 .footer-container {
+  display: flex;
+  flex-direction: row;
   width: 50%;
   height: 100%;
+}
+
+.footer-topic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  height: 100%;
+  color: white;
+}
+
+.footer-topic > p {
+  font-weight: bold;
+  margin: 10px 0 10px 0;
 }
